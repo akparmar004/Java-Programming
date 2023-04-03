@@ -18,7 +18,7 @@ public class OrderAgnostic {
         while(s < e) {
             int mid = s + (e - s) / 2;
 
-            if (arr[mid] == target){
+            if (arr[mid] ==  target){
                 return mid;
             }
 

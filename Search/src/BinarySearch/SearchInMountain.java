@@ -3,11 +3,16 @@ package BinarySearch;
 
 public class SearchInMountain {
     public static void main(String[] args) {
-
+        int[] arr = {4,6,8,12,9,7,2};
+        int ans = search(arr,12);
+        System.out.println(ans);
     }
 
-    int search(int[] arr, int target) {
+    static int search(int[] arr, int target) {
         int peak = peakIndexInMountainArray(arr);
+        if (peak == target){
+            return peak;
+        }
         int firstTry = search1(arr,target,0,peak);
         if (firstTry != -1){
             return firstTry;
@@ -15,7 +20,7 @@ public class SearchInMountain {
          return search1(arr,target, peak+1,arr.length);
     }
 
-    public int peakIndexInMountainArray(int[] arr) {
+    public static int peakIndexInMountainArray(int[] arr) {
         int s = 0;
         int e = arr.length;
         while (s < e) {
