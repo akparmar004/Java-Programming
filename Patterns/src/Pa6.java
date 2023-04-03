@@ -1,5 +1,10 @@
 public class Pa6 {
     public static void main(String[] args) {
+        //    1
+        //   121
+        //  12321
+        // 1234321
+        //123454321
         int n = 5;
         int space = 5;
         int num1 = 1;

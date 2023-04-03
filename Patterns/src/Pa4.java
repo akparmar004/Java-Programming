@@ -5,17 +5,14 @@ public class Pa4 {
 //          ***
 //           **
 //            *
-        int star = 5;
-        int space = 0;
         for (int i = 1; i <= 5; i++) {
-            for (int j = 1; j <= space ; j++) {
-                System.out.print("  ");
+            for (int j = 1; j <= 5; j++) {
+                if (j >= i){
+                    System.out.print("* ");
+                }else {
+                    System.out.print("  ");
+                }
             }
-            for (int k = 1; k <= star; k++){
-                System.out.print("* ");
-            }
-            star--;
-            space++;
             System.out.println();
         }
     }

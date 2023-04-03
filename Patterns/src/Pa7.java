@@ -1,5 +1,11 @@
 public class Pa7 {
     public static void main(String[] args) {
+//            1
+//           ABA
+//          12321
+//         ABCDCBA
+//        123454321
+
         int n = 5;
         int space = 5;
         int num1 = 1;
