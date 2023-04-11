@@ -1,18 +1,21 @@
 public class DisplayDigits {
     public static void main(String[] args) {
-        int n = 123;
-        int r;
-        int num = 0;
+        int num = 123;
+        int n = reverse(num);
+
         while (n > 0){
-            r = n % 10;
-            num = num * 10 + r;
+            System.out.println(n % 10);
             n /= 10;
         }
+    }
+
+    static int reverse(int num) {
+        int temp = 0;
+
         while (num > 0){
-            r = num % 10;
-            System.out.println(r);
+            temp = (temp * 10) + (num % 10);
             num /= 10;
         }
-
+        return temp;
     }
 }
